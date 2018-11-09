@@ -2,7 +2,6 @@ package hn.edu.hn.edu.test;
 
 import hn.edu.hn.edu.ujcv.lib.al.VecR2;
 
-
 import static org.junit.Assert.*;
 
 public class VecR2Test {

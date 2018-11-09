@@ -1,7 +1,5 @@
 package hn.edu.hn.edu.ujcv.lib.al;
 
-
-
 public class VecR2 {
     private double x;
     private double y;
@@ -18,7 +16,7 @@ public class VecR2 {
     }
 
     public VecR2 mul(double alpha){
-        VecR2 retval = new VecR2(this.getX()* alpha, y *alpha);
+        VecR2 retval = new VecR2(this.getX() *alpha, y *alpha);
         return retval;
     }
 
@@ -35,9 +33,7 @@ public class VecR2 {
     }
 
     public VecR2 div(double alpha){
-        VecR2 retval = new VecR2();
-
-
+        VecR2 retval = new VecR2(this.getX() /alpha, y /alpha);
         return retval;
     }
 
