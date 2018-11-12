@@ -123,8 +123,10 @@ public class Mat2x2 {
     }
     // multiplicacion vector columna
     public VecR2 mul(VecR2 v){
-        
-        return new VecR2();
+        VecR2 retval = new VecR2();
+        retval.setX(colX.getX()*v.getX() + colX.getY()*v.getY());
+        retval.setY(colY.getX()*v.getX() + colY.getY()*v.getY());
+        return retval;
     }
     // multiplicacion por matriz
     public Mat2x2 mul (Mat2x2 b){
