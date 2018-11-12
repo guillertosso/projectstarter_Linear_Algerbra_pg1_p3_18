@@ -156,6 +156,35 @@ public class Mat3x3 {
         return retval;
     }
 
-    
+    public Mat3x3 mul (Mat3x3 b){
+        Mat3x3 retval =  new Mat3x3();
+
+        //            cx cy              cx cy
+        // dado A  x| 1  2 |  dado b  |  1  1 | fx
+        //          y| 2  3 |          |  0  0 | fy
+        //             x  y
+        //   retval:
+        //   |   a.fx.dot(b.cx)   a.fx.dot(b.cy) |
+        //   |   a.fy.dot(b.cx)   a.fy.dot(b.cy) |
+        //
+        //   a es this.
+        //   b es b
+        //   cx es colX
+        //   cy es colY
+        //   x es   getX , setX
+        //   y es   getY , setY
+
+        retval.colX.setX(this.getFilaX().dotProduct(b.colX));
+        retval.colX.setY(this.getFilaY().dotProduct(b.colX));
+        retval.colX.setZ(this.getFilaZ().dotProduct(b.colX));
+        retval.colY.setX(this.getFilaX().dotProduct(b.colY));
+        retval.colY.setY(this.getFilaY().dotProduct(b.colY));
+        retval.colY.setZ(this.getFilaZ().dotProduct(b.colY));
+        retval.colZ.setX(this.getFilaX().dotProduct(b.colZ));
+        retval.colZ.setY(this.getFilaY().dotProduct(b.colZ));
+        retval.colZ.setZ(this.getFilaZ().dotProduct(b.colZ));
+
+        return retval;
+    }
 
 }
