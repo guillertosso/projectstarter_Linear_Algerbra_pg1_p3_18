@@ -65,4 +65,37 @@ public class Mat3x3 {
         this.colZ.setZ(filaZ.getZ());
     }
 
+    // suma
+    public Mat3x3 suma (Mat3x3 b){
+        Mat3x3 retval = new Mat3x3();
+        //            cx cy              cx cy
+        // dado A  | 1  2 |  dado b  |  1  1 | x
+        //          | 2  3 |          |  0  0 |  y
+        //
+        //   retval:
+        //   |  a.cx.x + b.cx.x     a.cy.x +  b.cy.x |
+        //   |  a.cx.y + b.cx.y     a.cy.y + b.cy.y  |
+        //
+        //   a es this.
+        //   b es b
+        //   cx es colX
+        //   cy es colY
+        //   x es   getX , setX
+        //   y es   getY , setY
+
+        retval.colX.setX(this.colX.getX() + b.colX.getX());
+        retval.colX.setY(this.colX.getY() + b.colX.getY());
+        retval.colX.setZ(this.colX.getZ() + b.colX.getZ());
+        retval.colY.setX(this.colY.getX() + b.colY.getX());
+        retval.colY.setY(this.colY.getY() + b.colY.getY());
+        retval.colY.setZ(this.colZ.getZ() + b.colY.getZ());
+        retval.colZ.setX(this.colZ.getX() + b.colZ.getX());
+        retval.colZ.setY(this.colZ.getY() + b.colZ.getY());
+        retval.colZ.setZ(this.colZ.getZ() + b.colZ.getZ());
+
+        return retval;
+    }
+
+    
+
 }
