@@ -128,6 +128,21 @@ public class Mat3x3 {
         return retval;
     }
 
-    
+    // multiplicacion escalar
+    public  Mat3x3 mul(double alpha){
+        Mat3x3 retval = new Mat3x3();
+
+        retval.colX.setX(this.colX.getX() * alpha);
+        retval.colX.setY(this.colX.getY() * alpha);
+        retval.colX.setZ(this.colX.getZ() * alpha);
+        retval.colY.setX(this.colY.getX() * alpha);
+        retval.colY.setY(this.colY.getY() * alpha);
+        retval.colY.setZ(this.colZ.getZ() * alpha);
+        retval.colZ.setX(this.colZ.getX() * alpha);
+        retval.colZ.setY(this.colZ.getY() * alpha);
+        retval.colZ.setZ(this.colZ.getZ() * alpha);
+
+        return retval;
+    }
 
 }
