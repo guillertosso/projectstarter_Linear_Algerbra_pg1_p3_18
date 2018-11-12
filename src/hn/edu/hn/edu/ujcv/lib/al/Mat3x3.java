@@ -145,4 +145,17 @@ public class Mat3x3 {
         return retval;
     }
 
+    // multiplicacion vector columna
+    public VecR3 mul(VecR3 v){
+        VecR3 retval = new VecR3();
+
+        retval.setX(colX.getX()*v.getX() + colX.getY()*v.getY() + colX.getZ()*v.getZ());
+        retval.setY(colY.getX()*v.getX() + colY.getY()*v.getY() + colY.getZ()*v.getZ());
+        retval.setZ(colZ.getX()*v.getX() + colZ.getY()*v.getY() + colZ.getZ()*v.getZ());
+
+        return retval;
+    }
+
+    
+
 }
