@@ -17,10 +17,10 @@ public class VecR4 {
 
     public VecR4 sub(VecR4 b){
         VecR4 retval = new VecR4();
-        retval.setX(this.getX()+ b.getX());
-        retval.setY(this.getY()+ b.getY());
-        retval.setZ(this.getZ()+ b.getZ());
-        retval.setW(this.getW()+ b.getW());
+        retval.setX(this.getX()- b.getX());
+        retval.setY(this.getY()- b.getY());
+        retval.setZ(this.getZ()- b.getZ());
+        retval.setW(this.getW()- b.getW());
         return retval;
     }
 
