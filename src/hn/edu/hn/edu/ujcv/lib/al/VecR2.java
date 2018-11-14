@@ -10,8 +10,8 @@ public class VecR2 {
 
     public VecR2 sub(VecR2 b){
         VecR2 retval = new VecR2();
-        retval.x = x + b.x;
-        retval.setY(this.getY()+ b.getY());
+        retval.x = x - b.x;
+        retval.setY(this.getY()- b.getY());
         return retval;
     }
 
