@@ -88,7 +88,7 @@ public class Mat3x3 {
         retval.colX.setZ(this.colX.getZ() + b.colX.getZ());
         retval.colY.setX(this.colY.getX() + b.colY.getX());
         retval.colY.setY(this.colY.getY() + b.colY.getY());
-        retval.colY.setZ(this.colZ.getZ() + b.colY.getZ());
+        retval.colY.setZ(this.colY.getZ() + b.colY.getZ());
         retval.colZ.setX(this.colZ.getX() + b.colZ.getX());
         retval.colZ.setY(this.colZ.getY() + b.colZ.getY());
         retval.colZ.setZ(this.colZ.getZ() + b.colZ.getZ());
@@ -137,7 +137,7 @@ public class Mat3x3 {
         retval.colX.setZ(this.colX.getZ() * alpha);
         retval.colY.setX(this.colY.getX() * alpha);
         retval.colY.setY(this.colY.getY() * alpha);
-        retval.colY.setZ(this.colZ.getZ() * alpha);
+        retval.colY.setZ(this.colY.getZ() * alpha);
         retval.colZ.setX(this.colZ.getX() * alpha);
         retval.colZ.setY(this.colZ.getY() * alpha);
         retval.colZ.setZ(this.colZ.getZ() * alpha);
