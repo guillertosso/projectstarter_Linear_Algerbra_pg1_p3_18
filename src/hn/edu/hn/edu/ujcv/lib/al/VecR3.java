@@ -16,9 +16,9 @@ public class VecR3 {
 
     public VecR3 sub(VecR3 b){
         VecR3 retval = new VecR3();
-        retval.setX(this.getX()+ b.getX());
-        retval.setY(this.getY()+ b.getY());
-        retval.setZ(this.getZ()+ b.getZ());
+        retval.setX(this.getX()- b.getX());
+        retval.setY(this.getY()- b.getY());
+        retval.setZ(this.getZ()- b.getZ());
         return retval;
     }
 
