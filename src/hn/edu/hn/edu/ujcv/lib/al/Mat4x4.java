@@ -36,7 +36,7 @@ public class Mat4x4 {
 
     public VecR4 getColW() { return colW; }
 
-    public void  setColW(VecR4 colW) { this.colW = colW; }
+    public void setColW(VecR4 colW) { this.colW = colW; }
 
     public VecR4 getFilaX(){
         VecR4 retval = new VecR4(colX.getX(),colY.getX(),colZ.getX(),colW.getX());
